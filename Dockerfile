@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # 7. The exact command Render will run to start your intelligence engine
-CMD uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "7860"]
