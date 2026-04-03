@@ -39,10 +39,10 @@ def evaluate_tft():
 
     df = get_tft_data()
     
-    # The last 10 weeks are our test set
+    # The last 10 weeks are test set
     test_actuals = df.iloc[-10:]['City_Bookings'].values
     
-    # The model needs the 24 weeks strictly PRIOR to the test set to make a prediction
+    # The model needs the 24 weeks strictly prior to the test set to make a prediction
     encoder_data = df.iloc[-34:-10].copy()
     
     # The decoder data provides the time/month structure for the test period, but targets must be 0

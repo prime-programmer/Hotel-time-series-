@@ -12,7 +12,7 @@ def get_db_connection():
     if not db_url:
         raise ValueError("DATABASE_URL is missing from environment variables.")
     
-    # SQLAlchemy requires 'postgresql://', not 'postgres://'
+    
     if db_url.startswith("postgres://"):
         db_url = db_url.replace("postgres://", "postgresql://", 1)
         
@@ -21,11 +21,11 @@ def get_db_connection():
 def load_weekly_base():
     engine = get_db_connection()
     
-    # Pull directly from your live Supabase cloud!
+    # Pull directly Supabase
     query = "SELECT * FROM bookings"
     df = pd.read_sql(query, engine)
 
-    # The rest of your existing logic stays exactly the same
+    
     df_clean = clean_hotel_data(df)
 
     weekly = df_clean.resample('W').agg({

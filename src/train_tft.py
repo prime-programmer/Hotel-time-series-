@@ -43,7 +43,7 @@ def train_tft():
     train_dataloader = training.to_dataloader(train=True, batch_size=batch_size, num_workers=0)
     val_dataloader = validation.to_dataloader(train=False, batch_size=batch_size, num_workers=0)
 
-    # Lock in the best seed from your assignment
+    # Best seed from assignement
     pl.seed_everything(123)
 
     print("Initializing Temporal Fusion Transformer...")
