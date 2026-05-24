@@ -86,7 +86,7 @@ Hotel-time-series-/
 ```
 
 ##  Author
-**Chibike Ugbam** * Machine Learning Engineer | Data Scientist
+**Chibike Ugbam** * Machine Learning | Data Science
 * https://www.linkedin.com/in/chibike-ugbam-b16b75ab/
 ```
 
