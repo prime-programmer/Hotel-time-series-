@@ -1,6 +1,5 @@
 ---
-title: V.Ger Forecasting Engine
-emoji: 🏨
+title: Forecasting Engine
 colorFrom: blue
 colorTo: indigo
 sdk: docker
